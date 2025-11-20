@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Sydney Bahma | AI in Economics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-root">
+  <header class="site-header">
     <div class="container">
-        <h1>Hello, welcome to my website!</h1>
-        <p>This is a simple, modern web page created for you.</p>
-        <button id="greetBtn">Click Me!</button>
-        <p id="greetMsg"></p>
+      <h1 class="site-title">Sydney Bahma</h1>
+      <p class="site-subtitle">AI in Economics · Portfolio</p>
     </div>
-    <script src="script.js"></script>
+  </header>
+
+  <main class="container main-layout">
+    <section class="profile-card">
+      <div class="profile-grid">
+        <!-- Headshot placeholder -->
+        <div class="headshot-placeholder" aria-label="Headshot placeholder">
+          <span>Headshot<br />Placeholder</span>
+        </div>
+
+        <!-- Text content -->
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>
+            I am a managerial economics and business analytics student at the
+            University of Massachusetts Amherst. My interests include but are
+            not limited to price theory, market analysis, and database
+            organization. Currently, I am learning about the emerging presence
+            of AI in economics.
+          </p>
+
+          <div class="button-row">
+            <!-- Resume button: opens your resume PDF -->
+            <a
+              class="btn primary-btn"
+              href="/mnt/data/Isenberg Resume-Sydney Bahma.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+
+            <!-- Projects button: goes to project page -->
+            <a class="btn secondary-btn" href="project.html">
+              Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sydney Bahma · AI in Economics</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple current-year helper
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
